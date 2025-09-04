@@ -3,7 +3,7 @@
         <catalog_item display_value="Media Review">03fae505c37722101d20d60d050131fd</catalog_item>
         <catalog_variable>IO:b1651ac9c33b22101d20d60d05013152</catalog_variable>
         <cleared>false</cleared>
-        <disabled>ignore</disabled>
+        <disabled>true</disabled>
         <field/>
         <field_message/>
         <field_message_type>none</field_message_type>
@@ -13,14 +13,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-04 12:54:52</sys_created_on>
         <sys_id>eceaf195c37b62101d20d60d0501318e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>synopsis</sys_name>
         <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
         <sys_update_name>catalog_ui_policy_action_eceaf195c37b62101d20d60d0501318e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-04 12:54:52</sys_updated_on>
+        <sys_updated_on>2025-09-04 14:13:05</sys_updated_on>
         <table/>
         <ui_policy display_value="Make fields read only">ba2af995c37b62101d20d60d05013137</ui_policy>
         <value/>
