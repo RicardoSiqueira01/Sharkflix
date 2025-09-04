@@ -18,8 +18,8 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path>poster</dynamic_value_dot_walk_path>
-        <dynamic_value_field display_value="Media">c3dfe58dc37722101d20d60d0501316f</dynamic_value_field>
+        <dynamic_value_dot_walk_path/>
+        <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
         <field/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-04 13:14:17</sys_created_on>
         <sys_id>18aeb15dc37b62101d20d60d0501319d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Poster </sys_name>
         <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
         <sys_update_name>item_option_new_18aeb15dc37b62101d20d60d0501319d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-04 14:24:36</sys_updated_on>
+        <sys_updated_on>2025-09-04 14:36:26</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
