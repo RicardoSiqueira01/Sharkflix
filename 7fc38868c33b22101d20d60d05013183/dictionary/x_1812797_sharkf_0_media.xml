@@ -22,5 +22,6 @@
         <element label="Production" max_length="250" name="production" type="string"/>
         <element default="0" label="Average Rating" max_length="255" name="average_rating" type="float"/>
         <element label="Website" max_length="1000" name="website" type="url"/>
+        <element label="Release Year" max_length="40" name="release_year" type="string"/>
     </element>
 </database>
