@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Media Consult</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+ 
+    var returnObj = {};
+ 
+    var grGenres = new GlideRecord("x_1812797_sharkf_0_genre");
+    grGenres.query();
+    while(grGenres.next()) {
+        returnObj[grGenres.getValue("name")] = [];
+        var grMedias = new GlideRecord("x_1812797_sharkf_0_media");
+        //grMedias.addEncodedQuery("state=3^integration_state=3^genreLIKE" + grGenres.getValue("sys_id"));
+        grMedias.addEncodedQuery("genreLIKE" + grGenres.getValue("sys_id"));
+        grMedias.query();
+        while(grMedias.next()) {
+            returnObj[grGenres.getValue("name")].push({
+                "name": grMedias.getValue("title"),
+                "average_rating": grMedias.getValue("average_rating")
+            });
+        }
+    }
+ 
+    return returnObj;
+ 
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1812797_sharkf_0/sharkflix_api</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 14:07:48</sys_created_on>
+        <sys_id>a341d737c3b322101d20d60d050131b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Media Consult</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_update_name>sys_ws_operation_a341d737c3b322101d20d60d050131b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 14:08:40</sys_updated_on>
+        <web_service_definition display_value="Sharkflix API">aea54fb7c37322101d20d60d05013103</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_es_latest_script action="DELETE">
+        <id>a341d737c3b322101d20d60d050131b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 14:07:47</sys_created_on>
+        <sys_id>bc58537bc37322101d20d60d050131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 14:07:47</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</application>
+        <file_path/>
+        <instance_id>02e794483bfbce94c55a348aa4e45ac0</instance_id>
+        <instance_name>dev281964</instance_name>
+        <name>sys_ws_operation_a341d737c3b322101d20d60d050131b6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;Media Consult&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+ 
+    var returnObj = {};
+ 
+    var grGenres = new GlideRecord("x_1812797_sharkf_0_genre");
+    grGenres.query();
+    while(grGenres.next()) {
+        returnObj[grGenres.getValue("name")] = [];
+        var grMedias = new GlideRecord("x_1812797_sharkf_0_media");
+        //grMedias.addEncodedQuery("state=3^integration_state=3^genreLIKE" + grGenres.getValue("sys_id"));
+        grMedias.addEncodedQuery("genreLIKE" + grGenres.getValue("sys_id"));
+        grMedias.query();
+        while(grMedias.next()) {
+            returnObj[grGenres.getValue("name")].push({
+                "name": grMedias.getValue("title"),
+                "average_rating": grMedias.getValue("average_rating")
+            });
+        }
+    }
+ 
+    return returnObj;
+ 
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_1812797_sharkf_0/sharkflix_api&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-12 14:07:48&lt;/sys_created_on&gt;&lt;sys_id&gt;a341d737c3b322101d20d60d050131b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Media Consult&lt;/sys_name&gt;&lt;sys_package display_value="Sharkflix" source="x_1812797_sharkf_0"&gt;7fc38868c33b22101d20d60d05013183&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Sharkflix"&gt;7fc38868c33b22101d20d60d05013183&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_a341d737c3b322101d20d60d050131b6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-12 14:08:40&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Sharkflix API"&gt;aea54fb7c37322101d20d60d05013103&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a341d737c3b322101d20d60d050131b6&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-12 14:07:47&lt;/sys_created_on&gt;&lt;sys_id&gt;bc58537bc37322101d20d60d050131e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-12 14:07:47&lt;/sys_updated_on&gt;&lt;table&gt;sys_ws_operation&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1422971327</payload_hash>
+        <record_name>Media Consult</record_name>
+        <reverted_from/>
+        <source>8f5b0cecc33b22101d20d60d05013139</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 14:08:40</sys_created_on>
+        <sys_id>6188937fc3b322101d20d60d0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1993e41c0400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 14:08:40</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>e188937f25b322107187c8df95ad6e9c</update_guid>
+        <update_guid_history>e188937f25b322107187c8df95ad6e9c:1422971327,89585f3ff9b32210800107a30674a32e:-607418179</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 14:11:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>07aa86dfb9fd442080a5ed6c58285440</sys_id>
+        <sys_metadata>a341d737c3b322101d20d60d050131b6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Media Consult</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_scope_delete display_value="">2958d3d7dd914df0835c33c5259d19e9</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_a341d737c3b322101d20d60d050131b6</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_a341d737c3b322101d20d60d050131b6">6188937fc3b322101d20d60d0501319d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 14:11:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
