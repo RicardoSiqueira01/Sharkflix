@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Media Suggestions">871cbb3bc37722101d20d60d05013176</catalog_item>
+        <catalog_variable>IO:f6fef73fc37722101d20d60d050131d4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-12 17:48:34</sys_created_on>
+        <sys_id>20da000cc38432101d20d60d0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>release_year</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_20da000cc38432101d20d60d0501312c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-12 17:48:34</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make suggestions mandatory">147a84c8c38432101d20d60d0501311d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>release_year</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=20da000cc38432101d20d60d0501312c"/>
+</record_update>
