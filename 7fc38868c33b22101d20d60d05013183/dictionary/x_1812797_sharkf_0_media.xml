@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="47aabb28c3bb62101d20d60d05013122" label="Media" max_length="40" name="x_1812797_sharkf_0_media" type="collection">
         <element label="Synopsis" max_length="4000" name="synopsis" type="string"/>
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Duplicate" value="7"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" default="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Media not Found" sequence="4" value="7"/>
+                <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="2" value="4"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
+            </choice>
+        </element>
         <element label="Genre" max_length="1024" name="genre" reference="x_1812797_sharkf_0_genre" type="glide_list"/>
+        <element label="Integration Error Message" max_length="1000" name="integration_error_message" type="string"/>
         <element default="0" label="IMDB Rating" max_length="40" name="imdb_rating" type="float"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
@@ -22,5 +39,6 @@
         <element label="Production" max_length="250" name="production" type="string"/>
         <element default="0" label="Average Rating" max_length="255" name="average_rating" type="float"/>
         <element label="Website" max_length="1000" name="website" type="url"/>
+        <element label="Release Year" max_length="4" name="release_year" type="string"/>
     </element>
 </database>

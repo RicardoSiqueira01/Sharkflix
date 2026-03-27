@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Media Review">03fae505c37722101d20d60d050131fd</catalog_item>
+        <catalog_variable>IO:0fa39a05c33b22101d20d60d05013177</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 12:53:29</sys_created_on>
+        <sys_id>878a7dd5c37b62101d20d60d05013104</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>average_rating</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_878a7dd5c37b62101d20d60d05013104</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 14:13:02</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make fields read only">ba2af995c37b62101d20d60d05013137</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>average_rating</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=878a7dd5c37b62101d20d60d05013104"/>
+</record_update>

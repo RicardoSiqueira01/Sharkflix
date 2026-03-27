@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>media</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 12:40:04</sys_created_on>
+        <sys_id>d077f1d1c37b62101d20d60d050131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>media</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d077f1d1c37b62101d20d60d050131eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 12:40:04</sys_updated_on>
+        <table>x_1812797_sharkf_0_review</table>
+        <ui_policy display_value="Make media mandatory">4a37395dc33b62101d20d60d0501317c</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=d077f1d1c37b62101d20d60d050131eb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</application>
+        <file_path/>
+        <instance_id>02e794483bfbce94c55a348aa4e45ac0</instance_id>
+        <instance_name>dev281964</instance_name>
+        <name>sys_ui_policy_action_d077f1d1c37b62101d20d60d050131eb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>media</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-04 12:40:04</sys_created_on><sys_id>d077f1d1c37b62101d20d60d050131eb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>media</sys_name><sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package><sys_policy/><sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope><sys_update_name>sys_ui_policy_action_d077f1d1c37b62101d20d60d050131eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-04 12:40:04</sys_updated_on><table>x_1812797_sharkf_0_review</table><ui_policy display_value="Make media mandatory">4a37395dc33b62101d20d60d0501317c</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=d077f1d1c37b62101d20d60d050131eb"/></record_update>]]></payload>
+        <payload_hash>1851461748</payload_hash>
+        <record_name>media</record_name>
+        <reverted_from/>
+        <source>8f5b0cecc33b22101d20d60d05013139</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 12:40:04</sys_created_on>
+        <sys_id>a987f1d1c37b62101d20d60d050131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19914bdc1b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 12:40:04</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>ad87f1d1fd7b6210fade83d05fe40ef1</update_guid>
+        <update_guid_history>ad87f1d1fd7b6210fade83d05fe40ef1:1851461748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 12:47:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>9217ff8d7f664aa0b40314549067b900</sys_id>
+        <sys_metadata>d077f1d1c37b62101d20d60d050131eb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>media</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_scope_delete display_value="">2958d3d7dd914df0835c33c5259d19e9</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_d077f1d1c37b62101d20d60d050131eb</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_d077f1d1c37b62101d20d60d050131eb">a987f1d1c37b62101d20d60d050131f2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 12:47:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

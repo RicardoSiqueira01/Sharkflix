@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>OMDB Api endpoint</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1812797_sharkf_0.integration_endpoint</name>
+        <read_roles/>
+        <suffix>integration_endpoint</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-09 13:08:11</sys_created_on>
+        <sys_id>52edabbac37322101d20d60d050131d6</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>x_1812797_sharkf_0.integration_endpoint</sys_name>
+        <sys_package display_value="Sharkflix" source="x_1812797_sharkf_0">7fc38868c33b22101d20d60d05013183</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sharkflix">7fc38868c33b22101d20d60d05013183</sys_scope>
+        <sys_update_name>sys_properties_52edabbac37322101d20d60d050131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 14:33:09</sys_updated_on>
+        <type>string</type>
+        <value>https://www.omdbapi.com/</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=52edabbac37322101d20d60d050131d6"/>
+</record_update>
